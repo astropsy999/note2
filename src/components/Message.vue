@@ -1,5 +1,7 @@
 <template>
-  <h1>Message Component - {{ message }}</h1></template
+  <div class="message" v-if="message">
+    <p>Message Component - {{ message }}</p>
+  </div></template
 >
 
 <script>
@@ -13,4 +15,12 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.message {
+  text-align: center;
+  padding: 20px;
+}
+p {
+  color: red;
+}
+</style>
